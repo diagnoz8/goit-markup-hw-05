@@ -34,7 +34,7 @@ button{
         cursor: pointer;
 
 }
-.visually-hidden {
+.visually-hidden  {
         position: absolute;
         width: 1px;
         height: 1px;
@@ -47,7 +47,11 @@ button{
         clip: rect(0 0 0 0);
         overflow: hidden;
 }
-
+.is-hidden{
+        visibility: hidden;
+        opacity: 0;
+        pointer-events: none;
+}
 :root{
 /* .       COLORS */
 --primary-brand: #4D5AE5;
@@ -263,6 +267,8 @@ display: inline-block;
 
         background-color: rgba(46, 47, 66, 0.4);
         z-index: 100;
+
+        transition: var(--anim-slow);
 }
 .modal{
         position: absolute;
