@@ -290,6 +290,8 @@ display: inline-block;
         border-radius: 4px;
 }
 .modal-btn{ 
+        position: absolute;
+        right: 31px;
         display: flex;
         margin-left: auto;
 
@@ -302,11 +304,27 @@ display: inline-block;
         padding: 7px;
      
         cursor: pointer;
+        transition: background-color var(--anim-slow);
+
 }
+.modal-btn:hover,
+.modal-btn:focus{
+        background-color: var(--pressed-state);
+}
+
 .modal-icon{
         fill: var(--modal-overlay);
         width: 100%;
         height: 100%;
+        transition: fill var(--anim-slow);
+
+}
+
+.modal-btn:hover .modal-icon,
+.modal-btn:focus .modal-icon
+{
+        fill: var(--white-background);
+
 }
 
 /* /Modal */
