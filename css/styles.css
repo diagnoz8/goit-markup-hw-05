@@ -158,7 +158,13 @@ display: inline-block;
 /* HEADER */
 .current{
         position: relative;
+
 }
+
+.current-txt{
+        color: var(--pressed-state);
+}
+
 .current::after{
         content: '';
         background-color: var(--pressed-state);
