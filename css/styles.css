@@ -80,9 +80,7 @@ body{
 /* COMPONENTS */
 .link{
 text-decoration: none;
-line-height: 1.5;
-color: var(--primary-brand);
-        letter-spacing: 0.02em;
+
 }
 .menu{
         
