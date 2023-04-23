@@ -201,11 +201,12 @@ display: inline-block;
         line-height: 1.5;
         letter-spacing: 0.02em;
         padding: 24px 0;
+        transition: color var(--anim-slow);
+
 }
 .header-nav:hover,
 .header-nav:focus {
         color: var(--pressed-state);
-        transition: color var(--anim-slow);
        
 }
 
@@ -277,9 +278,9 @@ display: inline-block;
 }
 .modal{
         position: absolute;
-        top: calc(50% - 217px);
-        left: calc(50% - 204px);
-
+        top: calc(50% );
+        left: calc(50% );
+        transform: translate(-50% -50%);
         width: 408px;
         min-height: 584px;
         padding: 24px;
@@ -363,13 +364,16 @@ display: inline-block;
                 align-items: flex-start;
         padding: 16px 32px;
 margin-left: auto;
-        margin-right: auto;}
+        margin-right: auto;
+        transition: background-color var(--anim-slow);
+
+}
+        
 
 .order-service-bt:hover,
 .order-service-bt:focus {
      
         background-color: var(--pressed-state);
-        transition: background-color var(--anim-slow);
                
 }
 /* hero */
